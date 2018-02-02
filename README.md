@@ -8,12 +8,12 @@ vue-cli的出现为vue工程化前端开发工作流提供了开箱即用的构�
 > 本demo github地址: [https://github.com/hedonghui/vue-cli-demo][1]
 
 ## 目录
-1.webpack初始化及webpack周边相关配置
-2.静态资源加载及css与处理器
-3.webpack-dev-server及开发模式相关配置
-4.配置vue的jsx写法及postcss相关
-5.css单独分离打包
-6.代码分离及生产环境浏览器缓存相关
+1. webpack初始化及webpack周边相关配置
+2. 静态资源加载及css与处理器
+3. webpack-dev-server及开发模式相关配置
+4. 配置vue的jsx写法及postcss相关
+5. css单独分离打包
+6. 代码分离及生产环境浏览器缓存相关
 
 ## 通过webpack搭建vue工程
 
@@ -32,11 +32,11 @@ vue-cli的出现为vue工程化前端开发工作流提供了开箱即用的构�
 
 先来看看安装的这几个包：
 
->1.webpack---------此处省略200字
->2.vue-----------Vue包
->3.css-loader--------------处理打包css文件
->4.vue-loader---------------处理打包.vue文件(依赖于css-loader, vue-template-compiler)
->5.vue-template-compiler ----------------处理vue模板<template>
+>1. webpack---------此处省略200字
+>2. vue-----------Vue包
+>3. css-loader--------------处理打包css文件
+>4. vue-loader---------------处理打包.vue文件(依赖于css-loader, vue-template-compiler)
+>5. vue-template-compiler ----------------处理vue模板<template>
 
 ### webpack.config.js相关配置
 
@@ -50,12 +50,10 @@ vue-cli的出现为vue工程化前端开发工作流提供了开箱即用的构�
 
 细心的朋友应该已经发现了我们配置了build和dev两个选项来区分生产环境和开发环境。其实在vue-cli或者其他的webpack相关搭建的工程中，单纯的将html,css,js代码打包到一起远远不能满足我们的需求，因此，webpack为我们提供了丰富的插件和相关配置来实现**代码分割**、**类库代码与业务代码分开打包**、**模块热替换**、**babel转码**、**webpack-dev-server**、**css预处理**等相关功能。
 
-**
 
 下面我们逐一来看这这个东西的配置与实现
 -------------------
 
-**
 ## cross-env##
 由于我们的webpack.config都写在同一个配置文件里面，在实现生产环境和开发环境中针对不同操作系统开发平台的不同，我们引入cross-env来实现同意管理，通过在webpack.config.js中判断是否为开发模式进行不同的配置
 

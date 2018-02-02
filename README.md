@@ -1,7 +1,9 @@
 ## 构建
 
 npm install
+
 npn run dev
+
 npm run build
 
 ## 从零搭建vue-cli

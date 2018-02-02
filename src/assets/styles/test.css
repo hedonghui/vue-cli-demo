@@ -2,3 +2,6 @@ body{
     color:red;
     background-image: url('../images/bg.jpg')
 }
+div{
+    text-align: center;
+}
